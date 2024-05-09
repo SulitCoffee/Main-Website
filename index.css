@@ -557,7 +557,6 @@
   overflow-y: hidden;
   overflow-x: scroll;
   display: grid;
-  grid-template-columns: auto auto auto;
 }
 
 .container::-webkit-scrollbar{
