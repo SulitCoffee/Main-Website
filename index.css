@@ -243,7 +243,7 @@
   width: 100%;
   position: absolute;
   margin: 0 !important;
-  top: 530px;
+  top: 590px;
   right: 0;
   left: 0;
   overflow: hidden;
@@ -281,7 +281,7 @@
   position: relative;
   line-height: 27.5px;
   display: inline-block;
-  height: 71px;
+  height: 0px;
   flex-shrink: 0;
   z-index: 0;
   font-size: var(--heading-1-size);
@@ -950,6 +950,7 @@
   max-width: 388px;
 }
 .phone {
+  top: 10px;
   width: 605px;
   position: relative;
   height: 514px;
