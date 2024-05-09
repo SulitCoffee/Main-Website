@@ -243,15 +243,13 @@
   width: 100%;
   position: absolute;
   margin: 0 !important;
-  top: 594px;
+  top: 530px;
   right: 0;
   left: 0;
-  max-width: 100%;
   overflow: hidden;
-  height: 180px;
-  flex-shrink: 0;
   z-index: 1;
   pointer-events: none;
+  object-fit: cover;
 }
 .coffee,
 .coffee-bg {
@@ -547,7 +545,7 @@
   left: 1310px;
 }
 
-.coffee-clipping {
+.container {
   position: absolute;
   height: 526px;
   width: 98.31% !important;
@@ -556,14 +554,13 @@
   right: 0.85%;
   left: 0.85%;
   z-index: 4;
-  scroll-snap-type: x mandatory;
   overflow-y: hidden;
   overflow-x: scroll;
-  display: flex;
-  user-select: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-.coffee-clipping::-webkit-scrollbar{
+.container::-webkit-scrollbar{
   width: 100%;
 }
 
