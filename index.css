@@ -623,6 +623,11 @@
   line-height: 25.5px;
   cursor: pointer;
 }
+
+.navigation1 b:hover{
+  color: var(--color-antiquewhite);
+}
+
 .location_bg {
   width: 104.57%;
   height: 1407px;
