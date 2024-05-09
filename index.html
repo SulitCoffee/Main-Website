@@ -299,8 +299,41 @@
           if (anchor) {
             anchor.scrollIntoView({ block: "start", behavior: "smooth" });
           }
+
         });
       }
+
+      const slider = document.querySelector(".coffee-clipping");
+      let isDown = false;
+      let startx;
+      let scrollLeft;
+
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startx = e.pagex - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+
+      slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+
+      slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return; //Stop from running in console
+        e.defaultPrevented();
+        const x = e.pagex - slider.offsetLeft;
+        const walk = (x - startx) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+      });
+
+
       </script>
   </body>
 </html>
