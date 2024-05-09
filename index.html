@@ -47,13 +47,13 @@
               </div>
             </div>
             <div class="buttons">
-              <div class="menu-button">
+              <div class="menu_button" id="aboutMenu">
                 <div class="button"></div>
                 <b class="dark_button">menu</b>
               </div>
-              <div class="location-button">
+              <div class="location-button" id="aboutLocation">
                 <div class="button1"></div>
-                <b class="location1">location</b>
+                <b class="light_button">location</b>
               </div>
             </div>
           </div>
@@ -239,15 +239,6 @@
     </div>
 <!-------------------- Scrolling ------------------>
     <script>
-      var aboutNav = document.getElementById("aboutNav");
-      if (aboutNav) {
-        aboutNav.addEventListener("click", function () {
-          var anchor = document.querySelector("[data-scroll-to='aboutContainer']");
-          if (anchor) {
-            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-          }
-        });
-      }
 
       var aboutNav = document.getElementById("aboutNav");
       if (aboutNav) {
@@ -285,6 +276,26 @@
           var anchor = document.querySelector(
             "[data-scroll-to='contactUsContainer']"
           );
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+
+      var aboutMenu = document.getElementById("aboutMenu");
+      if (aboutMenu) {
+        aboutMenu.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='menuTitleContainer']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+
+      var aboutLocation = document.getElementById("aboutLocation");
+      if (aboutLocation) {
+        aboutLocation.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='locationNav']");
           if (anchor) {
             anchor.scrollIntoView({ block: "start", behavior: "smooth" });
           }
