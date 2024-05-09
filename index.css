@@ -588,6 +588,7 @@
   right: 0.85%;
   left: 0.85%;
   z-index: 4;
+  scroll-snap-type: x mandatory;
   overflow-y: hidden;
   overflow-x: scroll;
   display: flex;
@@ -596,6 +597,12 @@
 
 .coffee-clipping::-webkit-scrollbar{
   width: 100%;
+}
+
+.product-box2.active{
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+
 }
 .menu-container,
 .nav {
