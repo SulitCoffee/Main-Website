@@ -87,7 +87,7 @@
   font-size: var(--body-text-size);
   line-height: 27.5px;
   font-family: var(--body-text);
-  color: var(--color-dimgray-300);
+  color: var(--color-dimbrown-300);
   z-index: 4;
 }
 .details {
@@ -98,46 +98,46 @@
   justify-content: center;
   gap: var(--gap-31xl);
 }
-.button {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--br-17xl);
-  background-color: var(--color-dimgray-300);
-}
+
 .menu_button {
+  position: absolute;
   width: 165px;
   position: relative;
   height: 60px;
-}
-.button1 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  display: inline-block;
+  font-size: var(--body-text);
+  font-family: var(--title);
+  color: var(--color-linen);
+  background-color: var(--color-dimbrown-300);
   border-radius: var(--br-17xl);
-  background-color: var(--color-seashell-100);
 }
-.light_button {
+.menu_button :hover{
+  background-color: var(--color-linen);
+  color: var(--color-dimbrown-100);
+  height: 90%;
+  box-shadow: 0 10px 16px 0 var(--color-dimbrown-200), 0 5px 10px 0 var(--color-dimbrown-200);
+}
+
+.location_button {
   position: absolute;
-  top: 26.67%;
-  left: 27.27%;
-  line-height: 27.5px;
-}
-.location-button {
   width: 165px;
   position: relative;
   height: 60px;
-  color: var(--color-gray-100);
+  display: inline-block;
+  font-size: var(--body-text);
+  font-family: var(--title);
+  color: var(--color-dimbrown-300);
+  background-color: var(--color-antiquewhite);
+  border-radius: var(--br-17xl);
 }
-.buttons {
+.location_button :hover{
+  background-color: var(--color-darkestbrown);
+  color: var(--color-antiquewhite);
+  height: 90%;
+  box-shadow: 0 10px 16px 0 var(--color-dimbrown-200), 0 5px 10px 0 var(--color-dimbrown-200);
+}
+
+.buttons{
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -148,6 +148,7 @@
   font-size: var(--button-size);
   color: var(--color-white);
 }
+
 .contents {
   flex: 1;
   display: flex;
@@ -225,7 +226,7 @@
   right: 0.85%;
   left: 0.57%;
   border-radius: var(--br-25xl);
-  background-color: var(--color-seashell-100);
+  background-color: var(--color-linen);
   height: 1492px;
   z-index: 0;
   pointer-events: none;
@@ -285,7 +286,7 @@
   flex-shrink: 0;
   z-index: 0;
   font-size: var(--heading-1-size);
-  color: var(--color-dimgray-300);
+  color: var(--color-dimbrown-300);
 }
 .product-box {
   position: absolute;
@@ -347,7 +348,7 @@
   left: 32.35%;
   font-size: var(--body-text-size);
   font-family: var(--body-text);
-  color: var(--color-dimgray-300);
+  color: var(--color-dimbrown-300);
 }
 .chocolates {
   position: absolute;
@@ -417,7 +418,7 @@
   top: 0;
   left: calc(50% - 161.5px);
   border-radius: var(--br-81xl);
-  background-color: var(--color-dimgray-300);
+  background-color: var(--color-dimbrown-300);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -517,7 +518,7 @@
   left: 32.34%;
   font-size: var(--body-text-size);
   font-family: var(--body-text);
-  color: var(--color-dimgray-300);
+  color: var(--color-dimbrown-300);
 }
 .coffee_animation {
   position: absolute;
@@ -637,7 +638,7 @@
   width: 663px;
   position: absolute;
   border-radius: var(--br-30xl) var(--br-79xl) 0 0;
-  background-color: var(--color-dimgray-200);
+  background-color: var(--color-dimbrown-200);
   height: 113px;
   z-index: 0;
 }
@@ -684,7 +685,7 @@
   top: 418px;
   left: calc(50% - 238px);
   border-radius: var(--br-29xl);
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-linen);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -696,7 +697,7 @@
   width: 387px;
   position: relative;
   border-radius: var(--br-55xl);
-  background-color: var(--color-seashell-100);
+  background-color: var(--color-linen);
   height: 305px;
   z-index: 0;
 }
@@ -722,7 +723,7 @@
   width: 361px;
   top: 36px;
   left: 71px;
-  color: var(--color-dimgray-300);
+  color: var(--color-dimbrown-300);
   display: inline-block;
   height: 282px;
   z-index: 1;
@@ -776,7 +777,7 @@
   padding: 0 var(--padding-81xl);
   z-index: 2;
   font-size: var(--font-size-81xl);
-  color: var(--color-dimgray-400);
+  color: var(--color-dimbrown-400);
 }
 .location_container {
   padding-top: 10%;
@@ -808,7 +809,7 @@
   top: 99.9px;
   right: 0;
   left: -1.59%;
-  background-color: var(--color-seashell-100);
+  background-color: var(--color-bg);
   height: 1359px;
   z-index: 1;
 }
@@ -836,7 +837,7 @@
   left: 0;
   border-radius: var(--br-22xl);
   background-color: var(--color-white);
-  border: 1px solid var(--color-dimgray-100);
+  border: 1px solid var(--color-dimbrown-100);
   box-sizing: border-box;
   height: 50px;
 }
@@ -868,7 +869,7 @@
 .email_bg {
   border-radius: var(--br-22xl);
   background-color: var(--color-white);
-  border: 1px solid var(--color-dimgray-100);
+  border: 1px solid var(--color-dimbrown-100);
   box-sizing: border-box;
 }
 .email_bg,
@@ -904,7 +905,7 @@
   left: 0;
   border-radius: var(--br-2xl);
   background-color: var(--color-white);
-  border: 1px solid var(--color-dimgray-100);
+  border: 1px solid var(--color-dimbrown-100);
   box-sizing: border-box;
   height: 151px;
 }
@@ -922,23 +923,27 @@
   position: relative;
   height: 151px;
 }
-.dark_button {
-  position: absolute;
-  width: 42.12%;
-  top: 26.67%;
-  left: 29.09%;
-  line-height: 27.5px;
-  display: inline-block;
-}
-.send-button {
+
+.send_button {
   width: 165px;
   position: relative;
   height: 60px;
   text-align: center;
-  font-size: var(--button-size);
-  color: var(--color-white);
+  display: inline-block;
+  font-size: var(--body-text);
   font-family: var(--title);
+  color: var(--color-antiquewhite);
+  background-color: var(--color-dimbrown-300);
+  border-radius: var(--br-17xl);
 }
+
+.send_button :hover{
+  background-color: var(--color-linen);
+  color: var(--color-dimbrown-100);
+  height: 90%;
+  box-shadow: 0 10px 16px 0 var(--color-dimbrown-200), 0 5px 10px 0 var(--color-dimbrown-200);
+}
+
 .contact_details {
   flex: 1;
   display: flex;
@@ -987,7 +992,7 @@
   min-width: 734px;
   max-width: 734px;
   text-align: center;
-  color: var(--color-dimgray-200);
+  color: var(--color-dimbrown-200);
 }
 .contact-us,
 .contact_container,
@@ -1028,6 +1033,6 @@
   justify-content: flex-start;
   text-align: center;
   font-size: var(--title-size);
-  color: var(--color-gray-100);
+  color: var(--color-darkestbrown);
   font-family: var(--title);
 }
