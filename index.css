@@ -589,8 +589,9 @@
   left: 0.85%;
   z-index: 4;
   overflow-y: hidden;
-  overflow-x: auto;
+  overflow-x: scroll;
   display: flex;
+  user-select: none;
 }
 
 .coffee-clipping::-webkit-scrollbar{
