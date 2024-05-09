@@ -582,7 +582,7 @@
 .coffee-clipping {
   position: absolute;
   height: 526px;
-  width: 98.31%;
+  width: 98.31% !important;
   margin: 0 !important;
   top: 200px;
   right: 0.85%;
