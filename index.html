@@ -11,38 +11,31 @@
     <!-------------------- Stylesheet ------------------>
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"/>
   </head>
 
   <body>
 <!-------------------- NAVIGATION ------------------>
     <div class="SulitCoffeeShop">
-      <header>
-        <div class="navbar">
-          <div class="logo">
-            <img class="logo_icon" alt="" height="45px" src="./elements/full logo.svg" /></div>
-            <ul class="links">
-              <li><a href="#aboutNav">about</a></li>
-              <li><a href="#menuNav">menu</a></li>
-              <li><a href="#locationNav">location</a></li>
-              <li><a href="#contactsNav">contacts</a></li>
-            </ul>
-            <div class="toggle_btn">
-              <i class="ri-menu-line"></i>
-            </div>
+      <div class="navigation">
+        <div class="nav-bg"></div>
+        <div class="navigation1">
+          <b class="nav" id="aboutNav">about</b>
+          <b class="nav" id="menuNav">menu</b>
+          <b class="nav" id="locationNav">location</b>
+          <b class="nav" id="contactsNav">contacts</b>
         </div>
-        <div class="dropdown_menu">
-            <li><a href="#aboutNav">about</a></li>
-            <li><a href="#menuNav">menu</a></li>
-            <li><a href="#locationNav">location</a></li>
-            <li><a href="#contactsNav">contacts</a></li>
+        <div class="logo">
+            <img class="logo_icon" alt="" src="./elements/full logo.svg" />
         </div>
-      </header>
+      </div>
 
 <!-------------------- ABOUT ------------------>
-<section class="about__section" id="aboutNav">
       <div class="about" data-scroll-to="aboutContainer">
         <div class="left-side">
           <div class="contents">
@@ -71,10 +64,8 @@
           <img class="main_image" alt="" src="./elements/drinks/maindrink.png"/>
         </div>
       </div>
-    </section>
 
 <!-------------------- MENU ------------------>
-<section class="menu__section" id="menuNav">
       <div class="nav">
         <div class="menu-container">
           <!-------------------- Non-Coffee Drinks ------------------>
@@ -180,10 +171,8 @@
           </div>
         </div>
       </div>
-    </section>
 
 <!-------------------- LOCATION ------------------>
-<section class="location__section" id="locationNav">
       <div class="location_container">
         <div class="location_bg"></div>
         <div class="loc-title">
@@ -196,17 +185,17 @@
             <img class="shop-interior" alt="" src="./elements/loc_image.png"/>
           </div>
           <div class="loc-tab">
-            <div class="address_tab">
-                <a href="https://www.google.com/maps/dir//Lot+10,+Sulok+Coffee+House,+Brgy,+Blk17+Garnet+St,+Greenpark,+Cainta,+1900+Rizal/@14.6096538,121.1124104,17z/data=!4m17!1m7!3m6!1s0x3397b963e741f577:0x5315721802ccb692!2sSulok+Coffee+House!8m2!3d14.609183!4d121.1130912!16s%2Fg%2F11vlnfs2nk!4m8!1m0!1m5!1m1!1s0x3397b963e741f577:0x5315721802ccb692!2m2!1d121.1130918!2d14.6091847!3e2?entry=ttu"
-                target="_blank">ADDRESS<button class="button wholeadd_button">L10 B17 Garnet St. Cainta Greenpark Village</button>
-                <img class="gmaps" alt="" src="./elements/gmaps.png" /></a>
+            <div class="address-tab">
+              <div class="tab">
+                  <b class="address_title">ADDRESS:</b>
+                <p class="whole_address"> L10 B17 Garnet St. Cainta Greenpark Village</p>
+              </div>
+              <img class="gmaps" alt="" src="./elements/gmaps.png" />
             </div>
           </div>
         </div>
       </div>
-    </section>
 <!-------------------- CONTACTS ------------------>
-<section class="contact__section" id="contactsNav">
       <div class="contact-us" data-scroll-to="contactUsContainer">
         <img class="wave-bg" alt="" src="./elements/footer-bg.svg" />
         <div class="extention"></div>
@@ -243,24 +232,51 @@
         </div>
       </div>
     </div>
-  </section>
-<!-------------------- Java script ------------------>
+<!-------------------- Scrolling ------------------>
     <script>
-      //---------------------------Responsive Navigation------------------------------------//
-      const toggleBtn = document.querySelector('.toggle_btn')
-      const toggleBtnIcon = document.querySelector('.toggle_btn i')
-      const dropDownMenu = document.querySelector('.dropdown_menu')
 
-      toggleBtn.onclick = function(){
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
+      var aboutNav = document.getElementById("aboutNav");
+      if (aboutNav) {
+        aboutNav.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='aboutContainer']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
 
-        toggleBtnIcon.classList = isOpen
-          ?'ri-close-large-line'
-          :'ri-menu-line'
+      var menuNav = document.getElementById("menuNav");
+      if (menuNav) {
+        menuNav.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='menuTitleContainer']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var locationNav = document.getElementById("locationNav");
+      if (locationNav) {
+        locationNav.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='locationNav']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var contactsNav = document.getElementById("contactsNav");
+      if (contactsNav) {
+        contactsNav.addEventListener("click", function () {
+          var anchor = document.querySelector(
+            "[data-scroll-to='contactUsContainer']"
+          );
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
 
-
-//---------------------------Linking About Buttons------------------------------------//
       var aboutMenu = document.getElementById("aboutMenu");
       if (aboutMenu) {
         aboutMenu.addEventListener("click", function () {
@@ -279,9 +295,8 @@
             anchor.scrollIntoView({ block: "start", behavior: "smooth" });
           }
         });
-      }}
-
-  //---------------------------Menu Horizontal Scroll------------------------------------//
+      }
+      
   const container = document.querySelector('#horizontal_scroll');
     
     let startY;
@@ -311,7 +326,8 @@
     function mouseMove(e){
       if(isDown){
         e.preventDefault();
-
+    
+        //Move Horizontally
         const x = e.pageX - container.offsetLeft;
         const walkX = x - startX;
         container.scrollLeft = scrollLeft - walkX;
