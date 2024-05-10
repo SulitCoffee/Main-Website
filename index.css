@@ -1032,7 +1032,7 @@
 .SulitCoffeeShop {
   width: 100%;
   background-color: var(--color-white);
-  height: 5022px;
+  height: fit-content;
   overflow: hidden;
   flex-direction: column;
   justify-content: flex-start;
