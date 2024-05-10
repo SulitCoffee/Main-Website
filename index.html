@@ -24,24 +24,25 @@
           <div class="logo">
             <img class="logo_icon" alt="" height="45px" src="./elements/full logo.svg" /></div>
             <ul class="links">
-              <li><a href="about">about</a></li>
-              <li><a href="menu">menu</a></li>
-              <li><a href="location">location</a></li>
-              <li><a href="contacts">contacts</a></li>
+              <li><a href="#aboutNav">about</a></li>
+              <li><a href="#menuNav">menu</a></li>
+              <li><a href="#locationNav">location</a></li>
+              <li><a href="#contactsNav">contacts</a></li>
             </ul>
             <div class="toggle_btn">
               <i class="ri-menu-line"></i>
             </div>
         </div>
         <div class="dropdown_menu">
-            <li><a href="about">about</a></li>
-            <li><a href="menu">menu</a></li>
-            <li><a href="location">location</a></li>
-            <li><a href="contacts">contacts</a></li>
+            <li><a href="#aboutNav">about</a></li>
+            <li><a href="#menuNav">menu</a></li>
+            <li><a href="#locationNav">location</a></li>
+            <li><a href="#contactsNav">contacts</a></li>
         </div>
       </header>
 
 <!-------------------- ABOUT ------------------>
+<section class="about__section" id="aboutNav">
       <div class="about" data-scroll-to="aboutContainer">
         <div class="left-side">
           <div class="contents">
@@ -70,8 +71,10 @@
           <img class="main_image" alt="" src="./elements/drinks/maindrink.png"/>
         </div>
       </div>
+    </section>
 
 <!-------------------- MENU ------------------>
+<section class="menu__section" id="menuNav">
       <div class="nav">
         <div class="menu-container">
           <!-------------------- Non-Coffee Drinks ------------------>
@@ -177,8 +180,10 @@
           </div>
         </div>
       </div>
+    </section>
 
 <!-------------------- LOCATION ------------------>
+<section class="location__section" id="locationNav">
       <div class="location_container">
         <div class="location_bg"></div>
         <div class="loc-title">
@@ -199,7 +204,9 @@
           </div>
         </div>
       </div>
+    </section>
 <!-------------------- CONTACTS ------------------>
+<section class="contact__section" id="contactsNav">
       <div class="contact-us" data-scroll-to="contactUsContainer">
         <img class="wave-bg" alt="" src="./elements/footer-bg.svg" />
         <div class="extention"></div>
@@ -236,9 +243,10 @@
         </div>
       </div>
     </div>
-<!-------------------- Scrolling ------------------>
+  </section>
+<!-------------------- Java script ------------------>
     <script>
-
+      //---------------------------Responsive Navigation------------------------------------//
       const toggleBtn = document.querySelector('.toggle_btn')
       const toggleBtnIcon = document.querySelector('.toggle_btn i')
       const dropDownMenu = document.querySelector('.dropdown_menu')
@@ -251,6 +259,8 @@
           ?'ri-close-large-line'
           :'ri-menu-line'
 
+
+//---------------------------Linking About Buttons------------------------------------//
       var aboutMenu = document.getElementById("aboutMenu");
       if (aboutMenu) {
         aboutMenu.addEventListener("click", function () {
@@ -270,7 +280,8 @@
           }
         });
       }}
-      
+
+  //---------------------------Menu Horizontal Scroll------------------------------------//
   const container = document.querySelector('#horizontal_scroll');
     
     let startY;
@@ -300,8 +311,7 @@
     function mouseMove(e){
       if(isDown){
         e.preventDefault();
-    
-        //Move Horizontally
+
         const x = e.pageX - container.offsetLeft;
         const walkX = x - startX;
         container.scrollLeft = scrollLeft - walkX;
