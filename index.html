@@ -239,47 +239,17 @@
 <!-------------------- Scrolling ------------------>
     <script>
 
-      var aboutNav = document.getElementById("aboutNav");
-      if (aboutNav) {
-        aboutNav.addEventListener("click", function () {
-          var anchor = document.querySelector("[data-scroll-to='aboutContainer']");
-          if (anchor) {
-            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-          }
-        });
-      }
+const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
 
-      var menuNav = document.getElementById("menuNav");
-      if (menuNav) {
-        menuNav.addEventListener("click", function () {
-          var anchor = document.querySelector("[data-scroll-to='menuTitleContainer']");
-          if (anchor) {
-            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-          }
-        });
-      }
-      
-      var locationNav = document.getElementById("locationNav");
-      if (locationNav) {
-        locationNav.addEventListener("click", function () {
-          var anchor = document.querySelector("[data-scroll-to='locationNav']");
-          if (anchor) {
-            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-          }
-        });
-      }
-      
-      var contactsNav = document.getElementById("contactsNav");
-      if (contactsNav) {
-        contactsNav.addEventListener("click", function () {
-          var anchor = document.querySelector(
-            "[data-scroll-to='contactUsContainer']"
-          );
-          if (anchor) {
-            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-          }
-        });
-      }
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+          ?'ri-close-large-line'
+          :'ri-menu-line'
 
       var aboutMenu = document.getElementById("aboutMenu");
       if (aboutMenu) {
