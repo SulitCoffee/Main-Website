@@ -19,24 +19,27 @@
   <body>
 <!-------------------- NAVIGATION ------------------>
     <div class="SulitCoffeeShop">
-      <div class="navigation">
-        <div class="nav-bg"></div>
-        <div class="navigation1">
-          <b class="nav" id="aboutNav">about</b>
-          <b class="nav" id="menuNav">menu</b>
-          <b class="nav" id="locationNav">location</b>
-          <b class="nav" id="contactsNav">contacts</b>
+      <header>
+        <div class="navbar">
+          <div class="logo">
+            <img class="logo_icon" alt="" height="45px" src="./elements/full logo.svg" /></div>
+            <ul class="links">
+              <li><a href="about">about</a></li>
+              <li><a href="menu">menu</a></li>
+              <li><a href="location">location</a></li>
+              <li><a href="contacts">contacts</a></li>
+            </ul>
+            <div class="toggle_btn">
+              <i class="ri-menu-line"></i>
+            </div>
         </div>
-        <div class="logo">
-            <img class="logo_icon" alt="" src="./elements/full logo.svg" />
+        <div class="dropdown_menu">
+            <li><a href="about">about</a></li>
+            <li><a href="menu">menu</a></li>
+            <li><a href="location">location</a></li>
+            <li><a href="contacts">contacts</a></li>
         </div>
-          <!----close button-->
-          <div class="nav__close" id="nav-close"></div>
-            <i class="ri-close-large-line"></i>
-          <!----toggle button-->
-          <div class="nav__toggle" id="nav-toggle"></div>
-            <i class="ri-menu-line"></i>
-      </div>
+      </header>
 
 <!-------------------- ABOUT ------------------>
       <div class="about" data-scroll-to="aboutContainer">
