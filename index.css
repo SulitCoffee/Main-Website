@@ -29,6 +29,7 @@
 }
 
 .logo_icon {
+  left: 0px;
   height: 100px;
   width: 200px;
   position: absolute;
@@ -69,7 +70,7 @@
   align-items: center;
   justify-content: flex-start;
   padding: 0 var(--padding-81xl);
-  position: relative;
+  position: sticky;
   text-align: left;
   font-size: var(--button-size);
   color: var(--color-white);
