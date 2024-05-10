@@ -27,7 +27,6 @@ body {
   --color-dimbrown-300: #5e452b;
   --color-darkestbrown: #2f1903;
   --color-black: #000;
-  --color-gradient:linear-gradient(194.87deg, #54391e, #6e573f);
 
   /* Gaps */
   --gap-xl: 20px;
@@ -36,10 +35,6 @@ body {
   --gap-base: 16px;
   --gap-31xl: 50px;
   --gap-81xl: 100px;
-
-    /* Z Indexes */
-    --z-fixed: 100;
-    --z-tooltip: 10;
 
   /* Paddings */
   --padding-81xl: 100px;
