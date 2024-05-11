@@ -200,7 +200,28 @@
         <img class="wave-bg" alt="" src="./elements/footer-bg.svg" />
         <div class="extention"></div>
         <div class="contact_container">
-          <div class="contact_details">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact_details"> 
+            <div class="contact_title">
+              <b> Contact us:</b>
+            </div>
+            <input type="hidden" name="access_key" value="7a4d6ac0-c006-489a-9cc9-f9fcb67fdbf3">
+            <input type="text" name="name" placeholder="Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Message" class="contact-inputs"></textarea>
+            <button type="submit">send</button>
+          </form>
+          <div class="right-side">
+            <img class="phone" alt="" src="./elements/phone.png" />
+
+            <div class="phone_box"></div>
+            <div class="or-call-us-container">
+              <span>or call us using </span>
+              <b>+63-9XX-XXX-XXXX</b>
+            </div>
+          </div>
+        </div>
+        
+          <!----<div class="contact_details">
             <b class="contact_title">Contact us :</b>
             <div class="name">
               <div class="name_bg"></div>
@@ -219,16 +240,8 @@
             <div class="send_button">
               <button class="button send_button">send</button>
             </div>
-          </div>
-          <div class="right-side">
-            <img class="phone" alt="" src="./elements/phone.png" />
+          </div>------>
 
-            <div class="phone_box"></div>
-            <div class="or-call-us-container">
-              <span>or call us using </span>
-              <b>+63-9XX-XXX-XXXX</b>
-            </div>
-          </div>
         </div>
       </div>
     </div>
