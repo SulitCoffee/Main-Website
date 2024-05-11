@@ -855,11 +855,22 @@
   height: 40px;
   font-family: var(--body-text);
   font-size: var(--body-text-size);
-  padding-left: 50px;
+  padding-left: 60px;
   border-radius: 30px;
+  background-color: var(--color-white);
+}
+#email {
+  background-image: url(./elements/email.svg);
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+#user {
+  background-image: url(./elements/users.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
 }
 .contact_container textarea{
-  width: 275px;
+  width: 300px;
   height: 140px;
   padding-top: 15px;
   padding-left: 25px;
@@ -884,6 +895,10 @@
   background-color: var(--color-dimbrown-300);
   border-radius: 30px;
   cursor: pointer;
+}
+.contact_container button:hover{
+  color:var(--color-white);
+  background-color: var(--color-darkestbrown);
 }
 /*-----Right Side-----*/
 .phone {
